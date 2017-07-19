@@ -5,6 +5,5 @@ class Account < ActiveRecord::Base
           :confirmable
   include DeviseTokenAuth::Concerns::User
 
-  has_many :reservations, dependent: :destroy
   has_many :profiles, dependent: :destroy
 end
